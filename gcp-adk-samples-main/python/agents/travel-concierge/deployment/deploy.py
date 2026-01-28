@@ -183,7 +183,7 @@ def main(argv: list[str]) -> None:
     if not location or location == "global":
         location = "us-central1"
         print(f"WARNING: Location was 'global' or empty, using 'us-central1' instead")
-    
+
     vertexai.init(
         project=project_id,
         location=location,
